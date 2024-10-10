@@ -14,6 +14,22 @@
 		CE7D60972CB769FE003174A3 /* MyProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60962CB769FE003174A3 /* MyProjectTests.swift */; };
 		CE7D60A12CB769FE003174A3 /* MyProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60A02CB769FE003174A3 /* MyProjectUITests.swift */; };
 		CE7D60A32CB769FE003174A3 /* MyProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60A22CB769FE003174A3 /* MyProjectUITestsLaunchTests.swift */; };
+		CE7D60B22CB76E21003174A3 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60B12CB76E21003174A3 /* TextFieldView.swift */; };
+		CE7D60B42CB76EEA003174A3 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60B32CB76EEA003174A3 /* CheckBoxView.swift */; };
+		CE7D60B62CB76FE9003174A3 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60B52CB76FE9003174A3 /* LogIn.swift */; };
+		CE7D60B82CB770C5003174A3 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60B72CB770C5003174A3 /* Profile.swift */; };
+		CE7D60BA2CB770ED003174A3 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60B92CB770ED003174A3 /* UserModel.swift */; };
+		CE7D60BC2CB77121003174A3 /* ForgotPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60BB2CB77121003174A3 /* ForgotPassword.swift */; };
+		CE7D60BE2CB7715E003174A3 /* SetNewPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60BD2CB7715E003174A3 /* SetNewPassword.swift */; };
+		CE7D60C02CB771F2003174A3 /* Verify.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60BF2CB771F2003174A3 /* Verify.swift */; };
+		CE7D60C42CB774A4003174A3 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = CE7D60C32CB774A4003174A3 /* Auth */; };
+		CE7D60C62CB774A4003174A3 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = CE7D60C52CB774A4003174A3 /* Functions */; };
+		CE7D60C82CB774A4003174A3 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = CE7D60C72CB774A4003174A3 /* PostgREST */; };
+		CE7D60CA2CB774A4003174A3 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = CE7D60C92CB774A4003174A3 /* Realtime */; };
+		CE7D60CC2CB774A4003174A3 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = CE7D60CB2CB774A4003174A3 /* Storage */; };
+		CE7D60CE2CB774A4003174A3 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = CE7D60CD2CB774A4003174A3 /* Supabase */; };
+		CE7D60D02CB774F7003174A3 /* Reposetories.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60CF2CB774F7003174A3 /* Reposetories.swift */; };
+		CE7D60D22CB7775B003174A3 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60D12CB7775B003174A3 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +60,16 @@
 		CE7D609C2CB769FE003174A3 /* MyProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7D60A02CB769FE003174A3 /* MyProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectUITests.swift; sourceTree = "<group>"; };
 		CE7D60A22CB769FE003174A3 /* MyProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE7D60B12CB76E21003174A3 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		CE7D60B32CB76EEA003174A3 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		CE7D60B52CB76FE9003174A3 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		CE7D60B72CB770C5003174A3 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		CE7D60B92CB770ED003174A3 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CE7D60BB2CB77121003174A3 /* ForgotPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPassword.swift; sourceTree = "<group>"; };
+		CE7D60BD2CB7715E003174A3 /* SetNewPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPassword.swift; sourceTree = "<group>"; };
+		CE7D60BF2CB771F2003174A3 /* Verify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verify.swift; sourceTree = "<group>"; };
+		CE7D60CF2CB774F7003174A3 /* Reposetories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reposetories.swift; sourceTree = "<group>"; };
+		CE7D60D12CB7775B003174A3 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +77,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7D60C82CB774A4003174A3 /* PostgREST in Frameworks */,
+				CE7D60C62CB774A4003174A3 /* Functions in Frameworks */,
+				CE7D60CE2CB774A4003174A3 /* Supabase in Frameworks */,
+				CE7D60C42CB774A4003174A3 /* Auth in Frameworks */,
+				CE7D60CC2CB774A4003174A3 /* Storage in Frameworks */,
+				CE7D60CA2CB774A4003174A3 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +110,7 @@
 				CE7D60952CB769FE003174A3 /* MyProjectTests */,
 				CE7D609F2CB769FE003174A3 /* MyProjectUITests */,
 				CE7D60832CB769FC003174A3 /* Products */,
+				CE7D60C22CB774A4003174A3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,7 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				CE7D60852CB769FC003174A3 /* MyProjectApp.swift */,
-				CE7D60872CB769FC003174A3 /* ContentView.swift */,
+				CE7D60AF2CB76D58003174A3 /* project */,
 				CE7D60892CB769FE003174A3 /* Assets.xcassets */,
 				CE7D608B2CB769FE003174A3 /* Preview Content */,
 			);
@@ -127,6 +160,39 @@
 			path = MyProjectUITests;
 			sourceTree = "<group>";
 		};
+		CE7D60AF2CB76D58003174A3 /* project */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D60872CB769FC003174A3 /* ContentView.swift */,
+				CE7D60B52CB76FE9003174A3 /* LogIn.swift */,
+				CE7D60BB2CB77121003174A3 /* ForgotPassword.swift */,
+				CE7D60BD2CB7715E003174A3 /* SetNewPassword.swift */,
+				CE7D60B72CB770C5003174A3 /* Profile.swift */,
+				CE7D60B02CB76DE6003174A3 /* DATA */,
+			);
+			path = project;
+			sourceTree = "<group>";
+		};
+		CE7D60B02CB76DE6003174A3 /* DATA */ = {
+			isa = PBXGroup;
+			children = (
+				CE7D60B12CB76E21003174A3 /* TextFieldView.swift */,
+				CE7D60B32CB76EEA003174A3 /* CheckBoxView.swift */,
+				CE7D60BF2CB771F2003174A3 /* Verify.swift */,
+				CE7D60CF2CB774F7003174A3 /* Reposetories.swift */,
+				CE7D60B92CB770ED003174A3 /* UserModel.swift */,
+				CE7D60D12CB7775B003174A3 /* UserViewModel.swift */,
+			);
+			path = DATA;
+			sourceTree = "<group>";
+		};
+		CE7D60C22CB774A4003174A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +209,14 @@
 			dependencies = (
 			);
 			name = MyProject;
+			packageProductDependencies = (
+				CE7D60C32CB774A4003174A3 /* Auth */,
+				CE7D60C52CB774A4003174A3 /* Functions */,
+				CE7D60C72CB774A4003174A3 /* PostgREST */,
+				CE7D60C92CB774A4003174A3 /* Realtime */,
+				CE7D60CB2CB774A4003174A3 /* Storage */,
+				CE7D60CD2CB774A4003174A3 /* Supabase */,
+			);
 			productName = MyProject;
 			productReference = CE7D60822CB769FC003174A3 /* MyProject.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +289,9 @@
 				Base,
 			);
 			mainGroup = CE7D60792CB769FC003174A3;
+			packageReferences = (
+				CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = CE7D60832CB769FC003174A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +335,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE7D60882CB769FC003174A3 /* ContentView.swift in Sources */,
+				CE7D60D22CB7775B003174A3 /* UserViewModel.swift in Sources */,
+				CE7D60BA2CB770ED003174A3 /* UserModel.swift in Sources */,
+				CE7D60B82CB770C5003174A3 /* Profile.swift in Sources */,
+				CE7D60BC2CB77121003174A3 /* ForgotPassword.swift in Sources */,
+				CE7D60C02CB771F2003174A3 /* Verify.swift in Sources */,
 				CE7D60862CB769FC003174A3 /* MyProjectApp.swift in Sources */,
+				CE7D60B22CB76E21003174A3 /* TextFieldView.swift in Sources */,
+				CE7D60BE2CB7715E003174A3 /* SetNewPassword.swift in Sources */,
+				CE7D60D02CB774F7003174A3 /* Reposetories.swift in Sources */,
+				CE7D60B42CB76EEA003174A3 /* CheckBoxView.swift in Sources */,
+				CE7D60B62CB76FE9003174A3 /* LogIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,6 +669,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase/supabase-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE7D60C32CB774A4003174A3 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		CE7D60C52CB774A4003174A3 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		CE7D60C72CB774A4003174A3 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		CE7D60C92CB774A4003174A3 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		CE7D60CB2CB774A4003174A3 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		CE7D60CD2CB774A4003174A3 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE7D60C12CB77475003174A3 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE7D607A2CB769FC003174A3 /* Project object */;
 }
