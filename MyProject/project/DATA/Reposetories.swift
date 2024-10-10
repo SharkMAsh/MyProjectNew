@@ -14,7 +14,7 @@ class Repositories {
 
 let supabase = SupabaseClient(
     supabaseURL: URL(string: "https://mqjhtgrstlkojposgqbk.supabase.co")!,
-    supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xamh0Z3JzdGxrb2pwb3NncWJrIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcyODQ0OTE4NywiZXhwIjoyMDQ0MDI1MTg3fQ.OIh9vFGRx2PYIKI2Wqy6nrE0jN0OFDhx_XwVarhbDv0",
+    supabaseKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1xamh0Z3JzdGxrb2pwb3NncWJrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjg0NDkxODcsImV4cCI6MjA0NDAyNTE4N30.Expc0UgE5AkPlqI2vHaWlz2fz6I_CtbFrreVgQHDok4",
     options: .init()
 )
 
