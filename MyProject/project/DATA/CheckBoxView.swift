@@ -15,7 +15,7 @@ struct CheckBoxView: View {
         Group {
             if isActive {
                 RoundedRectangle(cornerRadius: 2)
-                    .fill(Color.blue)
+                    .fill(Color.myBlue)
                     .frame(width: 16, height: 16)
                     .overlay {
                         if isActive {
@@ -37,3 +37,6 @@ struct CheckBoxView: View {
     }
 }
 
+#Preview {
+    ContentView()
+}

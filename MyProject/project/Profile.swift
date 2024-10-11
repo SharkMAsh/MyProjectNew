@@ -15,18 +15,14 @@ struct Profile: View {
         
         VStack {
             Spacer()
-            Divider()
+           
             Text("Home")
-                .font(.system(size: 20, weight: .bold))
+                .font(.custom("Roboto-Regular", size: 24))
                 .padding(10)
-            Divider()
+      
             Spacer()
             
-            NavigationLink("\(Image(systemName: "arrow.left")) Back to Log In", destination: LogIn())
-                .font(.system(size: 14))
-                .foregroundColor(.blue)
         }
-        .navigationBarBackButtonHidden(true)
         
         
     }

@@ -29,19 +29,19 @@ struct ForgotPassword: View {
         VStack {
             
             Text("Forgot Password")
-                .font(.system(size: 30, weight: .bold))
+                .font(.custom("Roboto-Medium", size: 24))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.bottom, 5)
                 .padding(.top, 100)
             Text("Enter your email address")
-                .font(.system(size: 14))
+                .font(.custom("Roboto-Medium", size: 14))
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                .foregroundColor(.gray)
+                .foregroundColor(.myGray)
                 .padding(.bottom, 50)
             
             if isWarningEmail {
                 Text("Неверный формат электронной почты")
-                    .font(.system(size: 14))
+                    .font(.custom("Roboto-Medium", size: 14))
                     .foregroundStyle(.yellow)
                     .padding(10)
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -73,20 +73,20 @@ struct ForgotPassword: View {
             
             if email.isEmpty {
                 Text("Send OTP")
-                    .font(.system(size: 16, weight: .bold))
+                    .font(.custom("Roboto-Medium", size: 16))
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
-                    .background(currectField ? Color.blue : Color.gray)
-                    .cornerRadius(10)
+                    .background(currectField ? Color.myBlue : Color.myGray)
+                    .cornerRadius(4)
                     .padding(.top, 50)
                     .foregroundColor(.white)
             } else {
                 Button("Send OTP", action: {
                     checkEmailAddress()
                 })
-                    .font(.system(size: 16, weight: .bold))
+                    .font(.custom("Roboto-Medium", size: 16))
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
-                    .background(currectField ? Color.blue : Color.gray)
-                    .cornerRadius(10)
+                    .background(currectField ? Color.myBlue : Color.myGray)
+                    .cornerRadius(4)
                     .padding(.top, 50)
                     .foregroundColor(.white)
             }
@@ -94,12 +94,12 @@ struct ForgotPassword: View {
             
             HStack(spacing: 5) {
                 Text("Remember password? Back to")
-                    .font(.system(size: 14))
-                    .foregroundColor(.gray)
+                    .font(.custom("Roboto-Regular", size: 14))
+                    .foregroundColor(.myGray)
                 
                 NavigationLink("Sign In", destination: LogIn())
-                    .font(.system(size: 14))
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    .font(.custom("Roboto-Medium", size: 14))
+                    .foregroundColor(.myBlue)
             }
             
             Spacer()

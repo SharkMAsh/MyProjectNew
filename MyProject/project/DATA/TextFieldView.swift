@@ -21,24 +21,24 @@ struct TextFieldView: View {
             VStack {
                 Text(titleField)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.system(size: 14))
-                    .foregroundColor(.gray)
+                    .font(.custom("Roboto-Medium", size: 14))
+                    .foregroundColor(.myGray)
                 ZStack(alignment: .trailing) {
                     if !isSecure {
                         SecureField(placeholderField, text: $text)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(10)
                             .padding(.trailing, 30)
-                            .cornerRadius(5)
-                            .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray))
+                            .cornerRadius(4)
+                            .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.myGray))
                             .textInputAutocapitalization(.never)
                     } else {
                         TextField(placeholderField, text: $text)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(10)
                             .padding(.trailing, 30)
-                            .cornerRadius(5)
-                            .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray))
+                            .cornerRadius(4)
+                            .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.myGray))
                             .textInputAutocapitalization(.never)
                     }
                     Button(action: {
@@ -48,7 +48,7 @@ struct TextFieldView: View {
                             .frame(alignment: .trailing)
                             .accentColor(.black)
                             .padding(10)
-                            .font(.system(size: 14))
+                            .font(.custom("Roboto-Medium", size: 14))
                             .scaleEffect(x: -1, y: 1)
                     }
                 }
@@ -57,17 +57,21 @@ struct TextFieldView: View {
             VStack {
                 Text(titleField)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.system(size: 14))
-                    .foregroundColor(.gray)
+                    .font(.custom("Roboto-Medium", size: 14))
+                    .foregroundColor(.myGray)
                 TextField(placeholderField, text: $text)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(10)
                     .background(Color.white)
-                    .cornerRadius(5)
-                    .overlay(RoundedRectangle(cornerRadius: 5).stroke(Color.gray))
+                    .cornerRadius(4)
+                    .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.myGray))
                     .textInputAutocapitalization(.never)
             }
         }
         
     }
+}
+
+#Preview {
+    ContentView()
 }

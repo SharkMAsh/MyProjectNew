@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE779C042CB8C92500478139 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BF82CB8C92500478139 /* Roboto-ThinItalic.ttf */; };
+		CE779C052CB8C92500478139 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BF92CB8C92500478139 /* Roboto-LightItalic.ttf */; };
+		CE779C062CB8C92500478139 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BFA2CB8C92500478139 /* Roboto-Bold.ttf */; };
+		CE779C072CB8C92500478139 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BFB2CB8C92500478139 /* Roboto-BlackItalic.ttf */; };
+		CE779C082CB8C92500478139 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BFC2CB8C92500478139 /* Roboto-Medium.ttf */; };
+		CE779C092CB8C92500478139 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BFD2CB8C92500478139 /* Roboto-BoldItalic.ttf */; };
+		CE779C0A2CB8C92500478139 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BFE2CB8C92500478139 /* Roboto-MediumItalic.ttf */; };
+		CE779C0B2CB8C92500478139 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779BFF2CB8C92500478139 /* Roboto-Thin.ttf */; };
+		CE779C0C2CB8C92500478139 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779C002CB8C92500478139 /* Roboto-Light.ttf */; };
+		CE779C0D2CB8C92500478139 /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779C012CB8C92500478139 /* Roboto-Italic.ttf */; };
+		CE779C0E2CB8C92500478139 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779C022CB8C92500478139 /* Roboto-Black.ttf */; };
+		CE779C0F2CB8C92500478139 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE779C032CB8C92500478139 /* Roboto-Regular.ttf */; };
 		CE7D60862CB769FC003174A3 /* MyProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60852CB769FC003174A3 /* MyProjectApp.swift */; };
 		CE7D60882CB769FC003174A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7D60872CB769FC003174A3 /* ContentView.swift */; };
 		CE7D608A2CB769FE003174A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7D60892CB769FE003174A3 /* Assets.xcassets */; };
@@ -50,6 +62,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE779BF82CB8C92500478139 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		CE779BF92CB8C92500478139 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		CE779BFA2CB8C92500478139 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		CE779BFB2CB8C92500478139 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		CE779BFC2CB8C92500478139 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		CE779BFD2CB8C92500478139 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		CE779BFE2CB8C92500478139 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		CE779BFF2CB8C92500478139 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		CE779C002CB8C92500478139 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		CE779C012CB8C92500478139 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		CE779C022CB8C92500478139 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		CE779C032CB8C92500478139 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		CE779C102CB8C93800478139 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		CE7D60822CB769FC003174A3 /* MyProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE7D60852CB769FC003174A3 /* MyProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProjectApp.swift; sourceTree = "<group>"; };
 		CE7D60872CB769FC003174A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +128,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE779BF72CB8C8FE00478139 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				CE779C022CB8C92500478139 /* Roboto-Black.ttf */,
+				CE779BFB2CB8C92500478139 /* Roboto-BlackItalic.ttf */,
+				CE779BFA2CB8C92500478139 /* Roboto-Bold.ttf */,
+				CE779BFD2CB8C92500478139 /* Roboto-BoldItalic.ttf */,
+				CE779C012CB8C92500478139 /* Roboto-Italic.ttf */,
+				CE779C002CB8C92500478139 /* Roboto-Light.ttf */,
+				CE779BF92CB8C92500478139 /* Roboto-LightItalic.ttf */,
+				CE779BFC2CB8C92500478139 /* Roboto-Medium.ttf */,
+				CE779BFE2CB8C92500478139 /* Roboto-MediumItalic.ttf */,
+				CE779C032CB8C92500478139 /* Roboto-Regular.ttf */,
+				CE779BFF2CB8C92500478139 /* Roboto-Thin.ttf */,
+				CE779BF82CB8C92500478139 /* Roboto-ThinItalic.ttf */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		CE7D60792CB769FC003174A3 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +171,7 @@
 		CE7D60842CB769FC003174A3 /* MyProject */ = {
 			isa = PBXGroup;
 			children = (
+				CE779C102CB8C93800478139 /* Info.plist */,
 				CE7D60852CB769FC003174A3 /* MyProjectApp.swift */,
 				CE7D60AF2CB76D58003174A3 /* project */,
 				CE7D60892CB769FE003174A3 /* Assets.xcassets */,
@@ -182,6 +227,7 @@
 				CE7D60CF2CB774F7003174A3 /* Reposetories.swift */,
 				CE7D60B92CB770ED003174A3 /* UserModel.swift */,
 				CE7D60D12CB7775B003174A3 /* UserViewModel.swift */,
+				CE779BF72CB8C8FE00478139 /* New Group */,
 			);
 			path = DATA;
 			sourceTree = "<group>";
@@ -308,7 +354,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE779C042CB8C92500478139 /* Roboto-ThinItalic.ttf in Resources */,
+				CE779C0D2CB8C92500478139 /* Roboto-Italic.ttf in Resources */,
+				CE779C072CB8C92500478139 /* Roboto-BlackItalic.ttf in Resources */,
+				CE779C092CB8C92500478139 /* Roboto-BoldItalic.ttf in Resources */,
+				CE779C0C2CB8C92500478139 /* Roboto-Light.ttf in Resources */,
 				CE7D608D2CB769FE003174A3 /* Preview Assets.xcassets in Resources */,
+				CE779C082CB8C92500478139 /* Roboto-Medium.ttf in Resources */,
+				CE779C062CB8C92500478139 /* Roboto-Bold.ttf in Resources */,
+				CE779C0F2CB8C92500478139 /* Roboto-Regular.ttf in Resources */,
+				CE779C052CB8C92500478139 /* Roboto-LightItalic.ttf in Resources */,
+				CE779C0E2CB8C92500478139 /* Roboto-Black.ttf in Resources */,
+				CE779C0A2CB8C92500478139 /* Roboto-MediumItalic.ttf in Resources */,
+				CE779C0B2CB8C92500478139 /* Roboto-Thin.ttf in Resources */,
 				CE7D608A2CB769FE003174A3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +569,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyProject/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -539,6 +598,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyProject/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

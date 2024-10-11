@@ -19,7 +19,7 @@ struct OTPVerify: View {
     
     @State var isCurrentCode: Bool = false
     
-    @State var defaultColor = Color.blue
+    @State var defaultColor = Color.myBlue
     
     @State var v0State: Bool = false
     @State var v1State: Bool = false
@@ -78,28 +78,28 @@ struct OTPVerify: View {
         VStack {
             
             Text("OTP Verification")
-                .font(.system(size: 30, weight: .bold))
+                .font(.custom("Roboto-Medium", size: 24))
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.bottom, 5)
                 .padding(.top, 100)
             Text("Eter the 6 digit numbers send to your email")
-                .font(.system(size: 14))
+                .font(.custom("Roboto-Medium", size: 14))
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                .foregroundColor(.gray)
+                .foregroundColor(.myGray)
                 .padding(.bottom, 50)
             
             HStack(spacing: 25) {
                 TextField("", text: $c0)
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(5)
-                    .border(v0State ? defaultColor : Color.gray)
+                    .border(v0State ? defaultColor : Color.myGray)
                     .multilineTextAlignment(.center)
                     .onChange(of: c0) { newValue in
                         if c0.count > 1 {
                             self.c0 = String(newValue.prefix(1))
                         } else if c0.count < 1 {
                             self.v0State = false
-                            self.defaultColor = Color.blue
+                            self.defaultColor = Color.myBlue
                         } else {
                             self.v0State = true
                         }
@@ -108,14 +108,14 @@ struct OTPVerify: View {
                 TextField("", text: $c1)
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(5)
-                    .border(v1State ? defaultColor : Color.gray)
+                    .border(v1State ? defaultColor : Color.myGray)
                     .multilineTextAlignment(.center)
                     .onChange(of: c1) { newValue in
                         if c1.count > 1 {
                             self.c1 = String(newValue.prefix(1))
                         } else if c1.count < 1 {
                             self.v1State = false
-                            self.defaultColor = Color.blue
+                            self.defaultColor = Color.myBlue
                         } else {
                             self.v1State = true
                         }
@@ -124,14 +124,14 @@ struct OTPVerify: View {
                 TextField("", text: $c2)
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(5)
-                    .border(v2State ? defaultColor : Color.gray)
+                    .border(v2State ? defaultColor : Color.myGray)
                     .multilineTextAlignment(.center)
                     .onChange(of: c2) { newValue in
                         if c2.count > 1 {
                             self.c2 = String(newValue.prefix(1))
                         } else if c2.count < 1 {
                             self.v2State = false
-                            self.defaultColor = Color.blue
+                            self.defaultColor = Color.myBlue
                         } else {
                             self.v2State = true
                         }
@@ -140,14 +140,14 @@ struct OTPVerify: View {
                 TextField("", text: $c3)
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(5)
-                    .border(v3State ? defaultColor : Color.gray)
+                    .border(v3State ? defaultColor : Color.myGray)
                     .multilineTextAlignment(.center)
                     .onChange(of: c3) { newValue in
                         if c3.count > 1 {
                             self.c3 = String(newValue.prefix(1))
                         } else if c3.count < 1 {
                             self.v3State = false
-                            self.defaultColor = Color.blue
+                            self.defaultColor = Color.myBlue
                         } else {
                             self.v3State = true
                         }
@@ -156,14 +156,14 @@ struct OTPVerify: View {
                 TextField("", text: $c4)
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(5)
-                    .border(v4State ? defaultColor : Color.gray)
+                    .border(v4State ? defaultColor : Color.myGray)
                     .multilineTextAlignment(.center)
                     .onChange(of: c4) { newValue in
                         if c4.count > 1 {
                             self.c4 = String(newValue.prefix(1))
                         } else if c4.count < 1 {
                             self.v4State = false
-                            self.defaultColor = Color.blue
+                            self.defaultColor = Color.myBlue
                         } else {
                             self.v4State = true
                         }
@@ -172,14 +172,14 @@ struct OTPVerify: View {
                 TextField("", text: $c5)
                     .frame(width: 25, height: 25, alignment: .center)
                     .padding(5)
-                    .border(v5State ? defaultColor : Color.gray)
+                    .border(v5State ? defaultColor : Color.myGray)
                     .multilineTextAlignment(.center)
                     .onChange(of: c5) { newValue in
                         if c5.count > 1 {
                             self.c5 = String(newValue.prefix(1))
                         } else if c5.count < 1 {
                             self.v5State = false
-                            self.defaultColor = Color.blue
+                            self.defaultColor = Color.myBlue
                         } else {
                             self.v5State = true
                         }
@@ -188,8 +188,8 @@ struct OTPVerify: View {
             }
             
             Text("If you didn't receive code, resend after 1:00")
-                .font(.system(size: 14))
-                .foregroundColor(.gray)
+                .font(.custom("Roboto-Regular", size: 14))
+                .foregroundColor(.myGray)
                 .padding(25)
             
             NavigationLink(destination: SetNewPassword(),
@@ -199,20 +199,20 @@ struct OTPVerify: View {
             
             if !allFieldsContains {
                 Text("Set New Password")
-                    .font(.system(size: 16, weight: .bold))
+                    .font(.custom("Roboto-Medium", size: 16))
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
-                    .background(allFieldsContains ? Color.blue : Color.gray)
-                    .cornerRadius(10)
+                    .background(allFieldsContains ? Color.myBlue : Color.myGray)
+                    .cornerRadius(4)
                     .padding(.top, 50)
                     .foregroundColor(.white)
             } else {
                 Button("Set New Password", action: {
                     currentCode()
                 })
-                    .font(.system(size: 16, weight: .bold))
+                    .font(.custom("Roboto-Medium", size: 16))
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
-                    .background(allFieldsContains ? Color.blue : Color.gray)
-                    .cornerRadius(10)
+                    .background(allFieldsContains ? Color.myBlue : Color.myGray)
+                    .cornerRadius(4)
                     .padding(.top, 50)
                     .foregroundColor(.white)
                 
@@ -220,12 +220,15 @@ struct OTPVerify: View {
             
             Spacer()
             
-            Text("Default code: \(Text("222222").foregroundColor(.blue))")
+            Text("Default code: \(Text("222222").foregroundColor(.myBlue))")
                 .font(.system(size: 12))
-                .foregroundStyle(.gray)
+                .foregroundStyle(.myGray)
         }
         .padding(25)
         .navigationBarBackButtonHidden(true)
     }
         
+}
+#Preview {
+    OTPVerify()
 }

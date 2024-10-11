@@ -28,18 +28,18 @@ struct LogIn: View {
             VStack {
                 
                 Text("Welcome Back")
-                    .font(.system(size: 30, weight: .bold))
+                    .font(.custom("Roboto-Medium", size: 24))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.bottom, 5)
                     .padding(.top, 100)
                 Text("Fill in your email and password to continue")
-                    .font(.system(size: 14))
+                    .font(.custom("Roboto-Medium", size: 14))
                     .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color.myGray)
                 
                 if userViewModel.isError {
                     Text("Неверный логин или пароль")
-                        .font(.system(size: 14))
+                        .font(.custom("Roboto-Medium", size: 14))
                         .foregroundStyle(.red)
                         .padding(10)
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
@@ -73,13 +73,13 @@ struct LogIn: View {
                         HStack {
                             CheckBoxView(isActive: $checkBoxValue)
                             Text("Remember password")
-                                .font(.system(size: 14))
-                                .foregroundColor(.gray)
+                                .font(.custom("Roboto-Medium", size: 12))
+                                .foregroundColor(Color.myGray)
                         }
                         Spacer()
                         NavigationLink("Forgot Password?", destination: ForgotPassword())
-                            .font(.system(size: 14))
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .font(.custom("Roboto-Medium", size: 12))
+                            .foregroundColor(.myBlue)
                         
                     }
                     .padding(.top, -5)
@@ -96,35 +96,35 @@ struct LogIn: View {
                     Button("Log In", action: {
                         userViewModel.signIn()
                     })
-                        .font(.system(size: 16, weight: .bold))
+                        .font(.custom("Roboto-Medium", size: 16))
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
-                        .background(logInActive ? Color.blue : Color.gray)
-                        .cornerRadius(10)
+                        .background(logInActive ? Color.myBlue : Color.myGray)
+                        .cornerRadius(4)
                         .foregroundColor(.white)
                 } else {
                     Text("Log In")
-                        .font(.system(size: 16, weight: .bold))
+                        .font(.custom("Roboto-Medium", size: 16))
                         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: 50)
-                        .background(logInActive ? Color.blue : Color.gray)
-                        .cornerRadius(10)
+                        .background(logInActive ? Color.myBlue : Color.myGray)
+                        .cornerRadius(4)
                         .foregroundColor(.white)
                 }
                 
                 VStack {
                     HStack {
                         Text("Already have an account?")
-                            .font(.system(size: 14))
-                            .foregroundColor(.gray)
+                            .font(.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.myGray)
                         
                         NavigationLink("Sign Up", destination: ContentView())
-                            .font(.system(size: 14))
-                            .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            .font(.custom("Roboto-Medium", size: 14))
+                            .foregroundColor(.myBlue)
                     }
                     .padding([.top, .bottom], 5)
                     HStack(spacing: 5) {
                         Text("or log is using")
-                            .font(.system(size: 14))
-                            .foregroundColor(.gray)
+                            .font(.custom("Roboto-Regular", size: 14))
+                            .foregroundColor(.myGray)
                         
                         Image(systemName: "g.circle.fill")
                             .font(.system(size: 16))
