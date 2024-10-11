@@ -27,7 +27,7 @@ struct TextFieldView: View {
                     if !isSecure {
                         SecureField(placeholderField, text: $text)
                             .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(10)
+                            .padding(10.76)
                             .padding(.trailing, 30)
                             .cornerRadius(4)
                             .overlay(RoundedRectangle(cornerRadius: 4).stroke(Color.myGray))
@@ -47,7 +47,7 @@ struct TextFieldView: View {
                         Image(systemName: isSecure ? "eye" : "eye.slash")
                             .frame(alignment: .trailing)
                             .accentColor(.black)
-                            .padding(10)
+                            .padding(12)
                             .font(.custom("Roboto-Medium", size: 14))
                             .scaleEffect(x: -1, y: 1)
                     }
