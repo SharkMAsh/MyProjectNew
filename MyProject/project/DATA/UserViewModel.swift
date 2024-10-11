@@ -2,13 +2,13 @@
 //  UserViewModel.swift
 //  MyProject
 //
-//  Created by user on 10.10.2024.
+//  Created by user on 12.10.2024.
 //
 
 import Foundation
 
 class UserViewModel: ObservableObject {
-    @Published var user = UserModel(
+    @Published var users = UserModel(
         id: UUID(),
         fullname: "",
         phone: "",
@@ -30,10 +30,10 @@ class UserViewModel: ObservableObject {
                     self.isProgress = true
                 }
                 try await Repositories.instance.signUp(
-                    fullname: user.fullname,
-                    phone: user.phone,
-                    email: user.email,
-                    password: user.password
+                    fullname: users.fullname,
+                    phone: users.phone,
+                    email: users.email,
+                    password: users.password
                 )
                 await MainActor.run {
                     self.isNavigate = true
@@ -56,8 +56,8 @@ class UserViewModel: ObservableObject {
                     self.isProgress = true
                 }
                 try await Repositories.instance.signIn(
-                    email: user.email,
-                    password: user.password
+                    email: users.email,
+                    password: users.password
                 )
                 await MainActor.run {
                     self.isAuth = true

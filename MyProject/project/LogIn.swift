@@ -2,7 +2,7 @@
 //  LoginScreen.swift
 //  MyProject
 //
-//  Created by user on 10.10.2024.
+//  Created by user on 12.10.2024.
 //
 
 import SwiftUI
@@ -15,7 +15,7 @@ struct LogIn: View {
     @StateObject var userViewModel = UserViewModel()
     
     func checkFields() {
-        if !userViewModel.user.email.isEmpty && !userViewModel.user.password.isEmpty {
+        if !userViewModel.users.email.isEmpty && !userViewModel.users.password.isEmpty {
             logInActive = true
         } else {
             logInActive = false
@@ -54,19 +54,19 @@ struct LogIn: View {
                         isSecureField: false,
                         titleField: "Email address",
                         placeholderField: "***********@example.com",
-                        text: $userViewModel.user.email
+                        text: $userViewModel.users.email
                     )
                     .textContentType(.emailAddress)
-                    .onChange(of: userViewModel.user.email) {
+                    .onChange(of: userViewModel.users.email) {
                         checkFields()
                     }
                     TextFieldView(
                         isSecureField: true,
                         titleField: "Password",
                         placeholderField: "***********",
-                        text: $userViewModel.user.password
+                        text: $userViewModel.users.password
                     )
-                    .onChange(of: userViewModel.user.password) {
+                    .onChange(of: userViewModel.users.password) {
                         checkFields()
                     }
                     HStack {

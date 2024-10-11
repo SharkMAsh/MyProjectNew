@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  MyProject
 //
-//  Created by user on 10.10.2024.
+//  Created by user on 12.10.2024.
 //
 
 import SwiftUI
@@ -17,7 +17,7 @@ struct ContentView: View {
     @StateObject var userViewModel = UserViewModel()
     
     func checkAllFields() {
-        if !userViewModel.user.fullname.isEmpty && !userViewModel.user.phone.isEmpty && !userViewModel.user.email.isEmpty && checkBoxValue && !userViewModel.user.password.isEmpty && !confirmPassword.isEmpty {
+        if !userViewModel.users.fullname.isEmpty && !userViewModel.users.phone.isEmpty && !userViewModel.users.email.isEmpty && checkBoxValue && !userViewModel.users.password.isEmpty && !confirmPassword.isEmpty {
             self.allFieldsChecked = true
         } else {
             self.allFieldsChecked = false
@@ -25,7 +25,7 @@ struct ContentView: View {
     }
     
     func checkPassword() {
-        if userViewModel.user.password.isEmpty || userViewModel.user.password != confirmPassword {
+        if userViewModel.users.password.isEmpty || userViewModel.users.password != confirmPassword {
             self.showingAlert = true
             self.allFieldsChecked = false
         }
@@ -64,37 +64,37 @@ struct ContentView: View {
                         isSecureField: false,
                         titleField: "Full name",
                         placeholderField: "Ivan Ivanov",
-                        text: $userViewModel.user.fullname
+                        text: $userViewModel.users.fullname
                     )
-                    .onChange(of: userViewModel.user.fullname) {
+                    .onChange(of: userViewModel.users.fullname) {
                         checkAllFields()
                     }
                     TextFieldView(
                         isSecureField: false,
                         titleField: "Phone number",
                         placeholderField: "+7 (999) 999-99-99",
-                        text: $userViewModel.user.phone
+                        text: $userViewModel.users.phone
                     )
-                    .onChange(of: userViewModel.user.phone) {
+                    .onChange(of: userViewModel.users.phone) {
                         checkAllFields()
                     }
                     TextFieldView(
                         isSecureField: false,
                         titleField: "Email address",
                         placeholderField: "***********@mail.com",
-                        text: $userViewModel.user.email
+                        text: $userViewModel.users.email
                     )
                     .textContentType(.emailAddress)
-                    .onChange(of: userViewModel.user.email) {
+                    .onChange(of: userViewModel.users.email) {
                         checkAllFields()
                     }
                     TextFieldView(
                         isSecureField: true,
                         titleField: "Password",
                         placeholderField: "***********",
-                        text: $userViewModel.user.password
+                        text: $userViewModel.users.password
                     )
-                    .onChange(of: userViewModel.user.password) {
+                    .onChange(of: userViewModel.users.password) {
                         checkAllFields()
                     }
                     TextFieldView(

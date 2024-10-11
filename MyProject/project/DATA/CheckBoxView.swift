@@ -2,7 +2,7 @@
 //  CheckBoxView.swift
 //  MyProject
 //
-//  Created by user on 10.10.2024.
+//  Created by user on 12.10.2024.
 //
 
 import SwiftUI
